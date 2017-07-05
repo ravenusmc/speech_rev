@@ -1,7 +1,10 @@
 # Speech_rev
 ## Intro
 
-In the fall of 2016, I started working on a project that would examine some famous speeches throughout U.S. History.
+In the fall of 2016, I started working on a project that would examine some famous speeches throughout U.S. History. I never finished that project which was built with Node/Express and D3.JS. However, it has been on my mind for a while now and I have decided that I would attack it using Flask/Pandas. 
+
+The purpose of this project is essentially to examine three speeches from U.S. history. The first one is The Gettysburg Addresss,
+the second: I have a Dream and finally President Einshowers military industrial complex speech. I am specifically looking at which words are the most common in each speech. I will not be looking at articles such as the. I want to see if the speeches convey a similar idea by examining the most common words. 
 
 # Getting started
 ### Installing
