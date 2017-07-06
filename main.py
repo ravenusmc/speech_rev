@@ -4,7 +4,7 @@ from flask import Flask, session, jsonify, redirect, url_for, escape, render_tem
 #Setting up Flask
 app = Flask(__name__)
 
-@app.route('/index')
+@app.route('/')
 def index():
     return render_template('index.html', title='Graph Page')
 

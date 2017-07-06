@@ -1,0 +1,17 @@
+/* Generic CSS */
+body {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+/* CSS for Index Page */
+.banner_container {
+  background-image: url(https://source.unsplash.com/PSY_KuMcTJU);
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+
