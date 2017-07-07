@@ -6,6 +6,8 @@ In the fall of 2016, I started working on a project that would examine some famo
 The purpose of this project is essentially to examine three speeches from U.S. history. The first one is The Gettysburg Addresss,
 the second: I have a Dream and finally President Einshowers military industrial complex speech. I am specifically looking at which words are the most common in each speech. I will not be looking at articles such as the. I want to see if the speeches convey a similar idea by examining the most common words. 
 
+One final note, I made this site right after the fourth of July in 2017. That may explain the reason for the patriotic theme! 
+
 # Getting started
 ### Installing
 
