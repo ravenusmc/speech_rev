@@ -16,6 +16,9 @@ body {
 
 .main_area_home_page {
   background-image: url(https://source.unsplash.com/9cvYePOAyKc);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .home_main_section {
@@ -51,6 +54,14 @@ body {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 50px;
+}
+
+.info_heading {
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
 }
 
 
