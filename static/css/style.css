@@ -4,6 +4,11 @@ body {
   margin-right: 2%;
 }
 
+.center {
+  text-align: center;
+  margin-top: 30px;
+}
+
 /* CSS for Index Page */
 .banner_container {
   background-image: url(https://source.unsplash.com/PSY_KuMcTJU);
@@ -130,6 +135,165 @@ span {
 .bottom_section {
   margin-bottom: 50px;
 }
+
+/* CSS for King Page */
+.king_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.king_image_area {
+  flex: 3;
+}
+
+.king_text_area_single {
+  flex: 4;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.king_text_area_double {
+  flex: 3;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.left {
+  margin-left: 5%;
+}
+
+.right {
+  margin-right: 5%;
+}
+
+.king_long_text_area_one {
+  background-image: url(https://source.unsplash.com/Vq__yk6faOI);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.king_long_text_area_two {
+  background-image: url(https://source.unsplash.com/_g9F-Y4p0lo);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.king_text_area_long {
+  position: relative;
+  margin-top: 20px;
+  color: #333;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(255,255,255,0.6);
+  font-size: 20px;
+  line-height: 35px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.king_section_pic_text_area {
+  display: flex;
+  flex-direction: row;
+}
+
+.single_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last_fix {
+  margin-bottom: 50px;
+}
+
+
+/*King page images */
+.one {
+  background-image: url(https://source.unsplash.com/E695OZJiju4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.two {
+  background-image: url(https://source.unsplash.com/kp_3fVsxedE);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.three {
+  background-image: url(https://source.unsplash.com/gzVgFhovsP0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.four {
+  background-image: url(https://source.unsplash.com/KXPllA8Ofko);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.five {
+  background-image: url(https://source.unsplash.com/RjYS7t3eHR4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.six {
+  background-image: url(https://source.unsplash.com/sNxC4EF1iB8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.seven {
+  flex: 5;
+  background-image: url(https://source.unsplash.com/AEaTUnvneik);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eight {
+  flex: 5;
+  background-image: url(https://source.unsplash.com/Lg3XQb461us);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nine {
+  flex: 5;
+  background-image: url(https://source.unsplash.com/7zn9UvUyRFE);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ten {
+  flex: 5;
+  background-image: url(https://source.unsplash.com/JSvSIKCd9j4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 /* Media Queries to make the site responsive */
 @media only all and (max-width: 768px){
