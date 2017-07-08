@@ -127,6 +127,10 @@ span {
   background-position: center;
 }
 
+.bottom_section {
+  margin-bottom: 50px;
+}
+
 /* Media Queries to make the site responsive */
 @media only all and (max-width: 768px){
 
@@ -154,7 +158,58 @@ span {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-}
+  }
+
+  .getty_para_one {
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .lincoln_image_one {
+    margin-right: 2%;
+    margin-left: 3%;
+    height: 450px;
+    width: 300px;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .lincoln_image_two {
+    margin-left: 3%;
+    margin-right: 2%;
+    height: 450px;
+    width: 300px;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .getty_para_two {
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 30px;
+    font-size: 20px;
+  } 
+
+  .getty_para_three {
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .lincoln_image_three {
+    margin-left: 3%;
+    margin-right: 2%;
+    height: 450px;
+    width: 300px;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
 }
 
