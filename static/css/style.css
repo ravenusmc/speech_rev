@@ -31,7 +31,7 @@ body {
 
 .pupose_container {
   width: 600px;
-  background-color: rgba(233,31,65,0.8);
+  background-color: rgba(233,31,65,0.9);
   border-radius: 8px;
   padding: 20px;
   margin-top: 50px;
@@ -64,6 +64,68 @@ span {
   font-weight: bold;
 }
 
+/* CSS for Lincoln Page */
+.getty_title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.lincoln_section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.getty_para_one {
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 40px;
+  font-size: 35px;
+}
+
+.lincoln_image_one {
+  margin-right: 5%;
+  background-image: url(https://source.unsplash.com/QV1Fde2RsBo);
+  height: 450px;
+  width: 1000px;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lincoln_image_two {
+  margin-left: 5%;
+  background-image: url(https://source.unsplash.com/htAyoWqrXww);
+  height: 450px;
+  width: 1000px;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.getty_para_two {
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 35px;
+  font-size: 30px;
+}
+
+.getty_para_three {
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.lincoln_image_three {
+  margin-right: 5%;
+  background-image: url(https://source.unsplash.com/9C8r4QUwZRQ);
+  height: 450px;
+  width: 1000px;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* Media Queries to make the site responsive */
 @media only all and (max-width: 768px){
@@ -87,6 +149,12 @@ span {
   .speech_info{
     margin-bottom: 15px;
   }
+
+  .lincoln_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
 
 }
 

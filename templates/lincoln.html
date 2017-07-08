@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- Navbar elements -->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">U.S. Speechs</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/lincoln">Lincoln</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/king">King</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/military">Eisenhower</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/data">The Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main elements -->
+<main>
+
+  <h1 class='getty_title'>The GettysBurg Address</h1>
+  <h4 class='getty_title'>The Land</h4>
+
+  <section class='lincoln_section'>
+
+    <div>
+      <p class='getty_para_one'>Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. 
+      </p>
+    </div>
+
+    <div class='lincoln_image_one'>
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section class='lincoln_section'>
+
+    <div class='lincoln_image_two'>
+    </div>
+
+    <div>
+      <p class='getty_para_two'>But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. 
+      </p>
+    </div>
+    
+  </section>
+
+  <hr>
+
+  <section class='lincoln_section'>
+
+    <div>
+      <p class='getty_para_three'>It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.
+      </p>
+    </div>
+
+    <div class='lincoln_image_three'>
+    </div>
+
+  </section>
+
+</main>
+
+{% endblock %}

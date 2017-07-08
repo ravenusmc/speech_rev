@@ -6,7 +6,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='Graph Page')
+    return render_template('index.html', title='Home')
+
+@app.route('/lincoln')
+def lincon_speech():
+    return render_template('lincoln.html', title='Gettysburg Address')
 
 
 
