@@ -16,6 +16,10 @@ def lincon_speech():
 def king_speech():
   return render_template('king.html', title='I Have a Dream')
 
+@app.route('/military')
+def ike_speech():
+  return render_template('military.html', title='Ike Speech')
+
 
 
 #This line will actually run the app.

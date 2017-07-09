@@ -294,6 +294,30 @@ span {
   background-position: center;
 }
 
+/* CSS for Military section */
+.mil_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mil_text_area {
+  width: 500px;
+  border: 2px solid red;
+}
+
+/* CSS for military page pictures */
+
+.mil_img_one { 
+  height: 800px;
+  width: 600px;
+  border: 2px solid blue;
+  background-image: url(https://source.unsplash.com/NLbvPon-5r8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 
 /* Media Queries to make the site responsive */
 @media only all and (max-width: 768px){
@@ -373,6 +397,23 @@ span {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  /* CSS for King Page-Media Query */
+  .king_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .king_section_pic_text_area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* CSS for Military section */
+  .mil_section {
+    display: flex;
+    flex-direction: column;
   }
 
 }
