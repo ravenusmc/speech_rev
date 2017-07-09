@@ -303,19 +303,40 @@ span {
 
 .mil_text_area {
   width: 500px;
-  border: 2px solid red;
 }
 
 /* CSS for military page pictures */
 
-.mil_img_one { 
-  height: 800px;
-  width: 600px;
-  border: 2px solid blue;
-  background-image: url(https://source.unsplash.com/NLbvPon-5r8);
+.mil_img { 
+  width: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.bottom {
+  margin-bottom: 50px;
+}
+
+/* Military images */
+.mil_one {
+  background-image: url(https://source.unsplash.com/NLbvPon-5r8);
+}
+
+.mil_two {
+  background-image: url(https://source.unsplash.com/Kjn03TNkkJM);
+}
+
+.mil_three {
+  background-image: url(https://source.unsplash.com/wsVFxYDFa9k);
+}
+
+.mil_four {
+  background-image: url(https://source.unsplash.com/fsEgvr_Pm-Y);
+}
+
+.mil_five {
+  background-image: url(https://source.unsplash.com/J-LMPtk8tmg);
 }
 
 
@@ -414,6 +435,12 @@ span {
   .mil_section {
     display: flex;
     flex-direction: column;
+  }
+
+  .mil_text_area {
+    margin-left: 5%;
+    margin-right: 3%;
+    width: 300px;
   }
 
 }
