@@ -89,8 +89,9 @@ def sort_words(text_dict_list):
   #I return all of the list back to the main function. 
   return getty_word, getty_count, dream_word, dream_count, military_word, military_count
 
+#This function will make the charts for me using NKD3. 
 def make_chart(word, count):
-  output_file = open('dream_chart.html', 'w')
+  output_file = open('military_chart.html', 'w')
   type = 'pieChart'
   chart = pieChart(name=type, color_category='category20c', height=450, width=450)
   xdata = word
@@ -100,8 +101,6 @@ def make_chart(word, count):
   chart.buildhtml()
   output_file.write(chart.htmlcontent)
   output_file.close()
-
-
 
 
 #This is the main function that will run the program. 
@@ -132,15 +131,10 @@ def main_text():
   #The sort words function will get the specific count of words and their counts in two seperate list 
   #for use with Pandas. 
   getty_word, getty_count, dream_word, dream_count, military_word, military_count = sort_words(text_dict_list)
-  make_chart(dream_word, dream_count)
-  #return getty_word, getty_count, dream_word, dream_count, military_word, military_count 
 
-  # print(getty_word)
-  # print(getty_count)
-  # print(dream_word)
-  # print(dream_count)
-  # print(military_word)
-  # print(military_count)
+  #I have this line commented out and will uncomment it if I need it. 
+  #make_chart(military_word, military_count)
+
 
 #Here I call the main function to run the program. 
 main_text()

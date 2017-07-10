@@ -339,6 +339,19 @@ span {
   background-image: url(https://source.unsplash.com/J-LMPtk8tmg);
 }
 
+/* CSS for data page */
+.main_data_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.speech_data_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 
 /* Media Queries to make the site responsive */
 @media only all and (max-width: 768px){
