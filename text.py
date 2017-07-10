@@ -1,4 +1,4 @@
-import pandas as pd 
+# import pandas as pd 
 
 #This function will get all the words out of the text document and into a list 
 def get_words(text_files):
@@ -20,6 +20,8 @@ def get_word_count(words):
     current_word = words[len_count].lower()
     #I then loop through the words again seeing is certain conditions are met. 
     for word in words:
+      #Here I purge out words that I really do not care for. They are words that are common in the English language and 
+      #Are needed basically to hold the language together. Thus, they are going to appear quite frequently. 
       if (current_word == word and current_word != 'and' and current_word != 'the' and current_word != 'The'and current_word !=
       'on' and current_word != 'of' and current_word != 'But' and current_word != 'from' and current_word != 'any'
       and current_word != 'nor' and current_word != 'this' and current_word != 'is' and current_word != 'by' and current_word != 'it'
@@ -46,13 +48,17 @@ def get_word_count(words):
 #list will hold the word, the second list will hold the counts for each word. I don't really think that this could 
 #have been done in the get_word_count_function because I would still need seperate lists for each text file. 
 def sort_words(text_dict_list):
+  #Setting up a counter variable
   count = 0
+  #creating all of the list that will hold the values from the dictionary. Each text file has to have two list. One 
+  #to hold the words and the second to hold the values. 
   getty_word = []
   getty_count = []
   dream_word = []
   dream_count = []
   military_word = []
   military_count = []
+  #This while loop will go through each of the dictionaries that the text_dict_list contains. 
   while count < len(text_dict_list):
     if count == 0:
       for key,value in text_dict_list[count].items():
@@ -76,7 +82,7 @@ def sort_words(text_dict_list):
 
 
 #This is the main function that will run the program. 
-def main():
+def main_text():
   #Creating a list to hold all of the text documents
   text_files = ['gettysburg.txt', 'dream.txt', 'military.txt']
   #Setting a counter to 0 which I will use in the while loop below
@@ -104,17 +110,18 @@ def main():
   #The sort words function will get the specific count of words and their counts in two seperate list 
   #for use with Pandas. 
   getty_word, getty_count, dream_word, dream_count, military_word, military_count = sort_words(text_dict_list)
+  return getty_word, getty_count, dream_word, dream_count, military_word, military_count 
 
 
-  print(getty_word)
-  print(getty_count)
-  print(dream_word)
-  print(dream_count)
-  print(military_word)
-  print(military_count)
+  # print(getty_word)
+  # print(getty_count)
+  # print(dream_word)
+  # print(dream_count)
+  # print(military_word)
+  # print(military_count)
 
 #Here I call the main function to run the program. 
-main()
+main_text()
 
 
 #SCRAP CODE 
