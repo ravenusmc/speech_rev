@@ -1,6 +1,9 @@
 #importing outside libraries for use in the project
 from flask import Flask, session, jsonify, redirect, url_for, escape, render_template, request
 
+#Importing files that I used for this project 
+from text import *
+
 #Setting up Flask
 app = Flask(__name__)
 
@@ -19,6 +22,11 @@ def king_speech():
 @app.route('/military')
 def ike_speech():
   return render_template('military.html', title='Ike Speech')
+
+@app.route('/data')
+def data_page():
+  #USE NVD3
+  return render_template('data.html', title='Data Page')
 
 
 
