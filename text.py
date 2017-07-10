@@ -1,4 +1,5 @@
-# import pandas as pd 
+#This file is where I essentially sort the words in the speechs and count the number of times that the words 
+#words appear. 
 
 #This function will get all the words out of the text document and into a list 
 def get_words(text_files):
@@ -60,10 +61,15 @@ def sort_words(text_dict_list):
   military_count = []
   #This while loop will go through each of the dictionaries that the text_dict_list contains. 
   while count < len(text_dict_list):
+    #If the count is equal to 0 then I take the first dictionary in the list
     if count == 0:
+      #I loop through the dictionary
       for key,value in text_dict_list[count].items():
+        #Here I am looking for words that only appear greater than twice in the Gettysburg Address
         if value > 2:
+          #I append the word to one list
           getty_word.append(key)
+          #I append the count to another list
           getty_count.append(value)
     if count == 1:
       for key,value in text_dict_list[count].items():
@@ -75,8 +81,9 @@ def sort_words(text_dict_list):
         if value > 8:
           military_word.append(key)
           military_count.append(value)
+    #I increase the count of the counter variable by one.
     count += 1 
-  
+  #I return all of the list back to the main function. 
   return getty_word, getty_count, dream_word, dream_count, military_word, military_count
 
 
@@ -103,7 +110,6 @@ def main_text():
       words = get_words(document)
       military_word_and_count = get_word_count(words)
     count += 1
-
   #Here I place the dictionaries that I have into a list which will be used to pass all the dictionaries 
   #into a function.
   text_dict_list = [getty_word_and_count, dream_word_and_count, military_word_and_count]
@@ -111,7 +117,6 @@ def main_text():
   #for use with Pandas. 
   getty_word, getty_count, dream_word, dream_count, military_word, military_count = sort_words(text_dict_list)
   return getty_word, getty_count, dream_word, dream_count, military_word, military_count 
-
 
   # print(getty_word)
   # print(getty_count)
