@@ -25,9 +25,9 @@ def ike_speech():
 
 @app.route('/data')
 def data_page():
-  getty_word, getty_count, dream_word, dream_count, military_word, military_count = main_text()
-  print(getty_word)
-  print(getty_count)
+  # getty_word, getty_count, dream_word, dream_count, military_word, military_count = main_text()
+  # print(getty_word)
+  # print(getty_count)
   #Other speeches: John F. Kennedy will forever be remembered for his inaugural address
   #Ronald Reagan “Mr. Gorbachev, tear down this wall!”
   return render_template('data.html', title='Data Page')

@@ -1,5 +1,8 @@
 #This file is where I essentially sort the words in the speechs and count the number of times that the words 
 #words appear. 
+  
+#Importing files which will be used in the program.
+from nvd3 import pieChart
 
 #This function will get all the words out of the text document and into a list 
 def get_words(text_files):
@@ -86,6 +89,19 @@ def sort_words(text_dict_list):
   #I return all of the list back to the main function. 
   return getty_word, getty_count, dream_word, dream_count, military_word, military_count
 
+def make_chart(word, count):
+  output_file = open('dream_chart.html', 'w')
+  type = 'pieChart'
+  chart = pieChart(name=type, color_category='category20c', height=450, width=450)
+  xdata = word
+  ydata = count
+  extra_serie = {"tooltip": {"y_start": "", "y_end": " cal"}}
+  chart.add_serie(y=ydata, x=xdata, extra=extra_serie)
+  chart.buildhtml()
+  output_file.write(chart.htmlcontent)
+  output_file.close()
+
+
 
 
 #This is the main function that will run the program. 
@@ -116,7 +132,8 @@ def main_text():
   #The sort words function will get the specific count of words and their counts in two seperate list 
   #for use with Pandas. 
   getty_word, getty_count, dream_word, dream_count, military_word, military_count = sort_words(text_dict_list)
-  return getty_word, getty_count, dream_word, dream_count, military_word, military_count 
+  make_chart(dream_word, dream_count)
+  #return getty_word, getty_count, dream_word, dream_count, military_word, military_count 
 
   # print(getty_word)
   # print(getty_count)
