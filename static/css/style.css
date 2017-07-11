@@ -328,7 +328,7 @@ span {
 }
 
 .mil_three {
-  background-image: url(https://source.unsplash.com/wsVFxYDFa9k);
+  background-image: url(https://source.unsplash.com/zAITDJYV09w);
 }
 
 .mil_four {
@@ -343,13 +343,22 @@ span {
 .main_data_container {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.data_page_heading {
+  margin-bottom: 40px;
 }
 
 .speech_data_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.data_para {
+  margin-top: -12px;
+  width: 500px;
 }
 
 
@@ -452,6 +461,18 @@ span {
 
   .mil_text_area {
     margin-left: 5%;
+    margin-right: 3%;
+    width: 300px;
+  }
+
+  .speech_data_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .data_para {
+    margin-left: 3%;
     margin-right: 3%;
     width: 300px;
   }
