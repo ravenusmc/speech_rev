@@ -135,7 +135,6 @@ def main_text():
   #I have this line commented out and will uncomment it if I need it. 
   #make_chart(military_word, military_count)
 
-
 #Here I call the main function to run the program. 
 main_text()
 

@@ -35,6 +35,6 @@ website.
 
 # Preview
 
-To see a video that talks about this project please go here: COMING SOON
+To see a video that talks about this project please go here: https://www.youtube.com/watch?v=P1XnZkn5AJw
 
-Blog entry: COMING SOON
+Blog entry: https://codingsaga.wordpress.com/2017/07/18/speech-project-finished/
